@@ -16,19 +16,24 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private SensorManager sm;
     private Sensor sensorAcc;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //TextView-Objekte referenzieren
-        tvX = (TextView)findViewById(R.id.textViewX);
-        tvY = (TextView)findViewById(R.id.textViewY);
-        tvZ = (TextView)findViewById(R.id.textViewZ);
-//Sernsormanager
+        tvX = findViewById(R.id.textViewX);
+        tvY = findViewById(R.id.textViewY);
+        tvZ = findViewById(R.id.textViewZ);
+
+        //Sernsormanager
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);
+
+        //Acceleration Sensor
+        sensorAcc = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+
+        //register Sensor Listener
+        sm.registerListener(this, sensorAcc, sm.SENSOR_DELAY_NORMAL);
     }
 
 
@@ -39,6 +44,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onSensorChanged(SensorEvent event) {
 
+
+        tvX.setText("X:"+event.values[0]);
+        tvY.setText("Y:"+event.values[1]);
+        tvZ.setText("Z:"+event.values[2]);
     }
 
     @Override
