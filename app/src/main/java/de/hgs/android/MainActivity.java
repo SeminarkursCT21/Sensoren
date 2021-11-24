@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private TextView tvX;
     private TextView tvY;
     private TextView tvZ;
+
     private SensorManager sm;
     private Sensor sensorAcc;
 
@@ -32,19 +33,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         //Acceleration Sensor
         sensorAcc = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
+
         //register Sensor Listener
         sm.registerListener(this, sensorAcc, sm.SENSOR_DELAY_NORMAL);
     }
 
 
     /**
-     * dfgsdffdsgdg
      * @param event
      */
     @Override
     public void onSensorChanged(SensorEvent event) {
-
-
         tvX.setText("X:"+event.values[0]);
         tvY.setText("Y:"+event.values[1]);
         tvZ.setText("Z:"+event.values[2]);
@@ -54,4 +53,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
     }
+
+
 }
