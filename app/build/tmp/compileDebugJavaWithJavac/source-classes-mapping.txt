@@ -1,0 +1,4 @@
+de/hgs/android/BuildConfig.java
+ de.hgs.android.BuildConfig
+de/hgs/android/MainActivity.java
+ de.hgs.android.MainActivity

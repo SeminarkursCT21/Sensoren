@@ -1,0 +1,47 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="de.hgs.android"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:5:5-19:19
+12        android:allowBackup="true"
+12-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:6:13-39
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] C:\Users\hr.AD\.gradle\caches\transforms-2\files-2.1\73530a2d0c1df4b3085807c82555ce12\core-1.1.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:7:13-47
+16        android:label="@string/app_name"
+16-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:8:13-45
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:9:13-58
+18        android:supportsRtl="true"
+18-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:10:13-39
+19        android:testOnly="true"
+20        android:theme="@style/Theme.Sensoren" >
+20-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:11:13-50
+21        <activity android:name="de.hgs.android.MainActivity" >
+21-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:12:9-18:20
+21-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:12:19-47
+22            <intent-filter>
+22-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:13:13-17:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:14:17-68
+23-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:14:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:16:17-76
+25-->D:\AndroidProjekte\Sensoren\app\src\main\AndroidManifest.xml:16:27-74
+26            </intent-filter>
+27        </activity>
+28    </application>
+29
+30</manifest>
